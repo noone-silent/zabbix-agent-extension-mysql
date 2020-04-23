@@ -39,12 +39,12 @@ deps:
 install:
 	@echo Install
 	cp .out/${BINARYNAME} /usr/bin/${BINARYNAME}
-	cp ${CONFIG} /etc/zabbix/zabbix_agentd.conf.d/${CONFIG}
+	cp ${CONFIG} /etc/zabbix/zabbix_agentd.d/${CONFIG}
 	@echo Done
 
 remove:
 	@echo Remove
 	rm /usr/bin/${BINARYNAME}
-	rm /etc/zabbix/zabbix_agentd.conf.d/${CONFIG}
+	rm /etc/zabbix/zabbix_agentd.d/${CONFIG}
 	@echo Done
 
